@@ -1,0 +1,1858 @@
+fileFormatVersion: 2
+guid: 288998538c5a7c84e9f0182f3b403061
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1711461913780753255
+    second: Bill Rizer_0
+  - first:
+      213: -1624225909372475338
+    second: Bill Rizer_1
+  - first:
+      213: -8050052557075008625
+    second: Bill Rizer_2
+  - first:
+      213: 8347286170601793153
+    second: Bill Rizer_3
+  - first:
+      213: 2014993415600038591
+    second: Bill Rizer_4
+  - first:
+      213: -801045650963254805
+    second: Bill Rizer_5
+  - first:
+      213: 7833152107055570969
+    second: Bill Rizer_6
+  - first:
+      213: -105176289030906703
+    second: Bill Rizer_7
+  - first:
+      213: -4720751514763812546
+    second: Bill Rizer_8
+  - first:
+      213: 8946271043557012131
+    second: Bill Rizer_9
+  - first:
+      213: 8354791291155224191
+    second: Bill Rizer_10
+  - first:
+      213: 2333900449424161460
+    second: Bill Rizer_11
+  - first:
+      213: -2225670995416253891
+    second: Bill Rizer_12
+  - first:
+      213: 7704870148697094687
+    second: Bill Rizer_13
+  - first:
+      213: -6774570275436036535
+    second: Bill Rizer_14
+  - first:
+      213: 6578549417465724490
+    second: Bill Rizer_15
+  - first:
+      213: -8574589135385968256
+    second: Bill Rizer_16
+  - first:
+      213: 6028629712470916162
+    second: Bill Rizer_17
+  - first:
+      213: -6781832109496263781
+    second: Bill Rizer_18
+  - first:
+      213: 3895377036061989857
+    second: Bill Rizer_19
+  - first:
+      213: -3058574124749246704
+    second: Bill Rizer_20
+  - first:
+      213: 2614870060907865585
+    second: Bill Rizer_21
+  - first:
+      213: -9094028632116567146
+    second: Bill Rizer_22
+  - first:
+      213: -3120259248604012253
+    second: Bill Rizer_23
+  - first:
+      213: -6857073427824029856
+    second: Bill Rizer_24
+  - first:
+      213: -7961302502464692343
+    second: Bill Rizer_25
+  - first:
+      213: -6481331942766743269
+    second: Bill Rizer_26
+  - first:
+      213: -2669750698583626115
+    second: Bill Rizer_27
+  - first:
+      213: -7263568759444293036
+    second: Bill Rizer_28
+  - first:
+      213: -6835956840490045958
+    second: Bill Rizer_29
+  - first:
+      213: -8349499594412873164
+    second: Bill Rizer_30
+  - first:
+      213: -7852284988340675310
+    second: Bill Rizer_31
+  - first:
+      213: -5820493700919683827
+    second: Bill Rizer_32
+  - first:
+      213: -4375598275133240060
+    second: Bill Rizer_33
+  - first:
+      213: 7307305139731721206
+    second: Bill Rizer_34
+  - first:
+      213: -2045173740838519103
+    second: Bill Rizer_35
+  - first:
+      213: -4613171966453093556
+    second: Bill Rizer_36
+  - first:
+      213: 6681155404349545369
+    second: Bill Rizer_37
+  - first:
+      213: 938993747618712883
+    second: Bill Rizer_38
+  - first:
+      213: 8251151996740408668
+    second: Bill Rizer_39
+  - first:
+      213: 5369183896980807368
+    second: Bill Rizer_40
+  - first:
+      213: 1846736188590605092
+    second: Bill Rizer_41
+  - first:
+      213: -3278904919496744105
+    second: Bill Rizer_42
+  - first:
+      213: -3923471872436930733
+    second: Bill Rizer_43
+  - first:
+      213: -9089500462670054591
+    second: Bill Rizer_44
+  - first:
+      213: 3431612176330496984
+    second: Bill Rizer_45
+  - first:
+      213: 3560476650855399671
+    second: Bill Rizer_46
+  - first:
+      213: -1547364221964516424
+    second: Bill Rizer_47
+  - first:
+      213: 5035836118004613843
+    second: Bill Rizer_48
+  - first:
+      213: 8488743648491492224
+    second: Bill Rizer_49
+  - first:
+      213: 8868865598243499922
+    second: Bill Rizer_50
+  - first:
+      213: 2397600531086775721
+    second: Bill Rizer_51
+  - first:
+      213: -9097123971064840105
+    second: Bill Rizer_52
+  - first:
+      213: 4819672026666858338
+    second: Bill Rizer_53
+  - first:
+      213: 7109960176703868400
+    second: Bill Rizer_54
+  - first:
+      213: -5358696615268736807
+    second: Bill Rizer_55
+  - first:
+      213: -6489460398131168604
+    second: Bill Rizer_56
+  - first:
+      213: -7481123710430235115
+    second: Bill Rizer_57
+  - first:
+      213: -8412232979055223201
+    second: Bill Rizer_58
+  - first:
+      213: -6554239200069241487
+    second: Bill Rizer_59
+  - first:
+      213: -3958363463232654957
+    second: Bill Rizer_60
+  - first:
+      213: -3517615768051998676
+    second: Bill Rizer_61
+  - first:
+      213: 7104843256673971929
+    second: Bill Rizer_62
+  - first:
+      213: -7383835718535080818
+    second: Bill Rizer_63
+  - first:
+      213: 4074119212964855314
+    second: Bill Rizer_64
+  - first:
+      213: -3574259402103422062
+    second: Bill Rizer_65
+  - first:
+      213: 7162337864353714517
+    second: Bill Rizer_66
+  - first:
+      213: 446428945478635654
+    second: Bill Rizer_67
+  - first:
+      213: -294737971060804098
+    second: Bill Rizer_68
+  - first:
+      213: -5955062521246402772
+    second: Bill Rizer_69
+  - first:
+      213: -1557030738495707341
+    second: Bill Rizer_70
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bill Rizer_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 387
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7631389fa8550c710800000000000000
+      internalID: 1711461913780753255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 387
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6382ed414279579e0800000000000000
+      internalID: -1624225909372475338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 387
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83b150b9d7784090800000000000000
+      internalID: -8050052557075008625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 388
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186204ddb8487d370800000000000000
+      internalID: 8347286170601793153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 388
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb26799e5d1b6fb10800000000000000
+      internalID: 2014993415600038591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 388
+        width: 54
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1b67d793d12e4f0800000000000000
+      internalID: -801045650963254805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 360
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91066ace652f4bc60800000000000000
+      internalID: 7833152107055570969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 357
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcd48de8b65a8ef0800000000000000
+      internalID: -105176289030906703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 361
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31ad9942858c7eb0800000000000000
+      internalID: -4720751514763812546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 358
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2349f5d1a872c70800000000000000
+      internalID: 8946271043557012131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 311
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7695d9e96e22f370800000000000000
+      internalID: 8354791291155224191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 309
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba3d0dd71ea36020800000000000000
+      internalID: 2333900449424161460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 309
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3af2539504dc11e0800000000000000
+      internalID: -2225670995416253891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 309
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1af99df3923dea60800000000000000
+      internalID: 7704870148697094687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 308
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ef6ba4a34ebf1a0800000000000000
+      internalID: -6774570275436036535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_15
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 308
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4eb56d27d3bb4b50800000000000000
+      internalID: 6578549417465724490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_16
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 268
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081456a8c90f00980800000000000000
+      internalID: -8574589135385968256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 263
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cb13e48cef9a350800000000000000
+      internalID: 6028629712470916162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 262
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b132bc0a712e1a0800000000000000
+      internalID: -6781832109496263781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_19
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 264
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb50b496c82f0630800000000000000
+      internalID: 3895377036061989857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 213
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fae1fd903cd85d0800000000000000
+      internalID: -3058574124749246704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_21
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 213
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5a73a5772e94420800000000000000
+      internalID: 2614870060907865585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 211
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693e57d24258bc180800000000000000
+      internalID: -9094028632116567146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_23
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 211
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321a4d7cebc92b4d0800000000000000
+      internalID: -3120259248604012253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_24
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 238
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f47c73c08c6d0a0800000000000000
+      internalID: -6857073427824029856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 235
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fd9270e85c38190800000000000000
+      internalID: -7961302502464692343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_26
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 235
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11fef700fead06a0800000000000000
+      internalID: -6481331942766743269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_27
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 238
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e621472e323fad0800000000000000
+      internalID: -2669750698583626115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_28
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 238
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ab2b382be923b90800000000000000
+      internalID: -7263568759444293036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_29
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 238
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd60b6d87dc121a0800000000000000
+      internalID: -6835956840490045958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_30
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 235
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aa0ce3b5e902c80800000000000000
+      internalID: -8349499594412873164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_31
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 213
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d52d20864170390800000000000000
+      internalID: -7852284988340675310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_32
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 223
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05984b31d3793fa0800000000000000
+      internalID: -5820493700919683827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_33
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 223
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d0fda3d80c643c0800000000000000
+      internalID: -4375598275133240060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_34
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 223
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb681f0f43c86560800000000000000
+      internalID: 7307305139731721206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_35
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 223
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cefc5981551e93e0800000000000000
+      internalID: -2045173740838519103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_36
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 223
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4be5c3c988baffb0800000000000000
+      internalID: -4613171966453093556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_37
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 223
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b9f65217b38bc50800000000000000
+      internalID: 6681155404349545369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_38
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 223
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d4025a6d9f70d00800000000000000
+      internalID: 938993747618712883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_39
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 208
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c559779460bf18270800000000000000
+      internalID: 8251151996740408668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_40
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 208
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ced941ae4c238a40800000000000000
+      internalID: 5369183896980807368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_41
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 208
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4234dc277cce0a910800000000000000
+      internalID: 1846736188590605092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_42
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 205
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753ad1d195dfe72d0800000000000000
+      internalID: -3278904919496744105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_43
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 208
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357f8259e170d89c0800000000000000
+      internalID: -3923471872436930733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 208
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b7dc8cc7b9bd180800000000000000
+      internalID: -9089500462670054591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_45
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 208
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db9519c7198f9f20800000000000000
+      internalID: 3431612176330496984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_46
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 205
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f00f4556aa596130800000000000000
+      internalID: 3560476650855399671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_47
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 162
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b308ab3078a68ae0800000000000000
+      internalID: -1547364221964516424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_48
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 162
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d24fb0b442e2e540800000000000000
+      internalID: 5035836118004613843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_49
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 161
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08350bd7f531ec570800000000000000
+      internalID: 8488743648491492224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_50
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 161
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f6cf7b54a841b70800000000000000
+      internalID: 8868865598243499922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_51
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 168
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a517b0eafcf54120800000000000000
+      internalID: 2397600531086775721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 108
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7504dfa62f580c180800000000000000
+      internalID: -9097123971064840105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_53
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 111
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2677d5b2c2ae2e240800000000000000
+      internalID: 4819672026666858338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_54
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 131
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd8b9b4c17aba260800000000000000
+      internalID: 7109960176703868400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_55
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 119
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0a1dbe1d512a5b0800000000000000
+      internalID: -5358696615268736807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_56
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 112
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa3d69862ec0f5a0800000000000000
+      internalID: -6489460398131168604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_57
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 41
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516bd0f3f95bd2890800000000000000
+      internalID: -7481123710430235115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_58
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 46
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e569becaeb14b80800000000000000
+      internalID: -8412232979055223201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_59
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 44
+        width: 21
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175bee26c2aaa05a0800000000000000
+      internalID: -6554239200069241487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_60
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 51
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391f12a07611119c0800000000000000
+      internalID: -3958363463232654957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_61
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 51
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20a2f8981bee2fc0800000000000000
+      internalID: -3517615768051998676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_62
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 53
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dea1e28c49799260800000000000000
+      internalID: 7104843256673971929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_63
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 54
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8410e40988578990800000000000000
+      internalID: -7383835718535080818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_64
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e3d5da6dd2a8830800000000000000
+      internalID: 4074119212964855314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_65
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 6
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2938682d20ea56ec0800000000000000
+      internalID: -3574259402103422062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_66
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 6
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5511226075cb56360800000000000000
+      internalID: 7162337864353714517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_67
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 4
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680d4b8b2c8023600800000000000000
+      internalID: 446428945478635654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_68
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 8
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5f91d7061e8ebf0800000000000000
+      internalID: -294737971060804098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_69
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27bddd203e5b5da0800000000000000
+      internalID: -5955062521246402772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bill Rizer_70
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 5
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3376997fac0546ae0800000000000000
+      internalID: -1557030738495707341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
