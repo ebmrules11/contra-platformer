@@ -5,11 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D r2d;
-    public float speed;
+    public float speedX;
     public float jumpForce;
     public bool isGrounded = false;
+    public bool hittingWall = false;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    public float rememberGroundedFor;
+    float lastTimeGrounded;
     public Transform isGroundedChecker;
     public float checkGroundRadius;
     public LayerMask groundLayer;
@@ -22,11 +25,27 @@ public class PlayerController : MonoBehaviour
     {
         Collider2D collider = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
 
-        isGrounded = (collider != null) ? true : false;
+        if(collider != null)
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            if(isGrounded)
+            {
+                lastTimeGrounded = Time.time;
+            }
+            isGrounded = false;
+        }
+
     }
     void Move()
     {
-        r2d.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, r2d.velocity.y);
+        if(!hittingWall)
+        {
+        r2d.velocity = new Vector2(Input.GetAxis("Horizontal") * speedX, r2d.velocity.y);
+
+        }
     }
 
     void BetterJump()
@@ -42,14 +61,32 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space) && (isGrounded ||
+            Time.time - lastTimeGrounded <= rememberGroundedFor))
         {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
         }
     }
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if(coll.gameObject.layer == 8 && !isGrounded)
+        {
+
+            hittingWall = true;
+        }
+        else
+        {
+            hittingWall = false;
+        }
+    }
+    void OnCollisionExit2D(Collision2D coll)
+    {
+        hittingWall = false;
+    }
     // Update is called once per frame
     void Update()
     {
+
         Move();
         Jump();
         BetterJump();
