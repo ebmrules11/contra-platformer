@@ -43,13 +43,19 @@ public class PlayerController : MonoBehaviour
     {
         if(!hittingWall)
         {
-        r2d.velocity = new Vector2(Input.GetAxis("Horizontal") * speedX, r2d.velocity.y);
+            r2d.velocity = new Vector2(Input.GetAxis("Horizontal") * speedX, r2d.velocity.y);
 
         }
     }
 
-    void BetterJump()
+    void Jump()
     {
+        if(Input.GetKeyDown(KeyCode.Space) && (isGrounded ||
+            Time.time - lastTimeGrounded <= rememberGroundedFor))
+        {
+            r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
+        }
+
         if (r2d.velocity.y < 0)
         {
             r2d.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
@@ -59,19 +65,10 @@ public class PlayerController : MonoBehaviour
             r2d.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
-    void Jump()
-    {
-        if(Input.GetKeyDown(KeyCode.Space) && (isGrounded ||
-            Time.time - lastTimeGrounded <= rememberGroundedFor))
-        {
-            r2d.velocity = new Vector2(r2d.velocity.x, jumpForce);
-        }
-    }
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if(coll.gameObject.layer == 8 && !isGrounded)
+        if(coll.gameObject.layer == 8 && !isGrounded && Input.GetAxis("Horizontal") != 0)
         {
-
             hittingWall = true;
         }
         else
@@ -83,13 +80,11 @@ public class PlayerController : MonoBehaviour
     {
         hittingWall = false;
     }
-    // Update is called once per frame
     void Update()
     {
 
         Move();
         Jump();
-        BetterJump();
         CheckIfGrounded();
     }
 }
