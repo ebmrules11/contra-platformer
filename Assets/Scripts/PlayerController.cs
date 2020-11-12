@@ -14,7 +14,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection;
-    private bool isGrounded;
+    [SerializeField] private bool isGrounded;
+	
+	public PlayerAnimation animation;
 
     void Awake()
     {
@@ -50,14 +52,30 @@ public class PlayerController : MonoBehaviour
     }
     private void Animate()
     {
-        if (moveDirection > 0 && !facingRight)
-        {
-            FlipCharacter();
-        }
-        else if (moveDirection < 0 && facingRight)
-        {
-            FlipCharacter();
-        }
+		if(Mathf.Abs(moveDirection) > .1f){
+			if (moveDirection > 0 && !facingRight)
+			{
+				FlipCharacter();
+			}
+			else if (moveDirection < 0 && facingRight)
+			{
+				FlipCharacter();
+			}
+			if(isGrounded){
+				animation.setAnimation(PlayerAnimation.RUNNING);
+			}
+			else{
+				animation.setAnimation(PlayerAnimation.JUMPING);
+			}
+		}
+		else{
+			if(isGrounded){
+				animation.setAnimation(PlayerAnimation.STANDING);
+			}
+			else{
+				animation.setAnimation(PlayerAnimation.JUMPING);
+			}
+		}
     }
     private void ProcessInputs()
     {
