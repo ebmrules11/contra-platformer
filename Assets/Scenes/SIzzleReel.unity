@@ -399,6 +399,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 768
   checkRadius: 0.05
+  isProning: 0
+  jumpDown: 0
+  isGrounded: 0
 --- !u!50 &1879297309
 Rigidbody2D:
   serializedVersion: 4
@@ -548,6 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3942d1f27318ea44eb66df4baa354808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
   waitTime: 0
 --- !u!251 &1924460729
 PlatformEffector2D:

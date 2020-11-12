@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     public float moveSpeed;
     public float jumpForce;
     public Transform GroundCheck;
@@ -11,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float checkRadius;
 
     private bool isJumping = false;
+    public bool isProning = false;
+    public bool jumpDown = false;
     private Rigidbody2D rb;
     private bool facingRight = true;
     private float moveDirection;
@@ -22,6 +25,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
+   
 
     void FixedUpdate()
     {
@@ -44,10 +49,14 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
-        if (isJumping)
+        if (isJumping && !jumpDown)
         {
             rb.AddForce(new Vector2(0f, jumpForce));
         }
+       /*else if (jumpDown)
+        {
+            effector.rotationalOffset = 180f;
+        }*/
         isJumping = false;
     }
     private void Animate()
@@ -80,10 +89,23 @@ public class PlayerController : MonoBehaviour
     private void ProcessInputs()
     {
         moveDirection = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        
+        if(Input.GetButton("Prone"))
+        {
+            isProning = true;
+            if (Input.GetButtonDown("Jump"))
+            {
+                jumpDown = true;
+            }
+            jumpDown = false;
+        }
+        
+        else if (Input.GetButtonDown("Jump") && isGrounded && !isProning)
         {
             isJumping = true;
         }
+        isProning = false;
+
     }
     private void FlipCharacter()
     {

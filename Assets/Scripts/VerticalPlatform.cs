@@ -5,21 +5,23 @@ using UnityEngine;
 public class VerticalPlatform : MonoBehaviour
 {
     private PlatformEffector2D effector;
+    public GameObject gameObject;
     public float waitTime;
     // Start is called before the first frame update
     void Start()
     {
         effector = GetComponent<PlatformEffector2D>();
+        gameObject = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.S))
+        if(gameObject.GetComponent<PlayerController>().jumpDown)
         {
-          effector.rotationalOffset = 180f;
+            effector.rotationalOffset = 180f;
         }
-        if(Input.GetKey(KeyCode.Space))
+        else if(Input.GetKey(KeyCode.Space))
         {
             effector.rotationalOffset = 0;
         }
