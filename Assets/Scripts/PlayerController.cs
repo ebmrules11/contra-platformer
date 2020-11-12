@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
             {
                 jumpDown = true;
             }
-            jumpDown = false;
+            StartCoroutine(SetjumpDownFalse());
         }
         
         else if (Input.GetButtonDown("Jump") && isGrounded && !isProning)
@@ -111,5 +111,11 @@ public class PlayerController : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
+    }
+
+    IEnumerator SetjumpDownFalse()
+    {
+        yield return new WaitForSeconds(.75f);
+        jumpDown = false;
     }
 }
