@@ -375,6 +375,36 @@ Transform:
   m_Father: {fileID: 1879297312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1695346842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695346843}
+  m_Layer: 10
+  m_Name: BulletOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1695346843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695346842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.382, y: 0.176, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1879297312}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1879297307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1267689871789512405, guid: 0e8a02f84be9e8548a1fa9417bfcca08, type: 3}
@@ -402,7 +432,11 @@ MonoBehaviour:
   isProning: 0
   jumpDown: 0
   isGrounded: 0
+  bulletPrefab: {fileID: 1627881808781700805, guid: f74eedb05cd459444bd50f0d57482566, type: 3}
+  bulletOriginT: {fileID: 1695346843}
+  fireCooldown: 0.3
   animation: {fileID: 1879297310}
+  projectileController: {fileID: 1879297311}
 --- !u!50 &1879297309
 Rigidbody2D:
   serializedVersion: 4
@@ -450,6 +484,19 @@ MonoBehaviour:
   - {fileID: 293760190467651468, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
   - {fileID: -7213499178765892706, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
   prone: []
+--- !u!114 &1879297311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879297307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459134c4fb3485245aa0c70da0578bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletLifetime: 1
 --- !u!4 &1879297312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6673178217058760058, guid: 0e8a02f84be9e8548a1fa9417bfcca08, type: 3}

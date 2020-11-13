@@ -19,11 +19,20 @@ public class PlayerController : MonoBehaviour
     private float moveDirection;
     [SerializeField] private bool isGrounded;
 	
+	// shooting
+	[SerializeField] GameObject bulletPrefab;
+	[SerializeField] Transform bulletOriginT;
+	[SerializeField] float fireCooldown;
+	float timeSinceLastFire;
+	
 	public PlayerAnimation animation;
+	public ProjectileController projectileController;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+		
+		timeSinceLastFire = 0f;
     }
 
    
@@ -31,8 +40,9 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, groundObjects);
-
-
+		
+		timeSinceLastFire += Time.deltaTime;
+		
 
         Move();
     }
@@ -105,6 +115,13 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
         }
         isProning = false;
+		
+		if(Input.GetMouseButton(0)){
+			if(timeSinceLastFire >= fireCooldown){
+				fire();
+				timeSinceLastFire = 0f;
+			}
+		}
 
     }
     private void FlipCharacter()
@@ -118,4 +135,19 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(.75f);
         jumpDown = false;
     }
+	
+	
+	private void fire(){
+		float velX;
+		float velY;
+		if(facingRight){ velX = 8f; }
+		else{ velX = -8f; }
+		velY = 0f;
+		
+		GameObject bullet = Instantiate(bulletPrefab);
+		bullet.transform.position = bulletOriginT.position;
+		bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(velX, velY);
+		
+		projectileController.addProjectile(bullet);
+	}
 }
