@@ -402,6 +402,7 @@ MonoBehaviour:
   isProning: 0
   jumpDown: 0
   isGrounded: 0
+  animation: {fileID: 1879297310}
 --- !u!50 &1879297309
 Rigidbody2D:
   serializedVersion: 4
@@ -423,9 +424,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1879297310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879297307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac0558e228e82446bfe3b3cd3bd60fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1879297313}
+  standing:
+  - {fileID: 2877879926254033181, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: 2966429564135526984, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  jumping:
+  - {fileID: -7038147857499564762, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: -8241612314048557408, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: -4086855831162156969, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: 6740007180076174271, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  running:
+  - {fileID: 3479048276803618925, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: 293760190467651468, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: -7213499178765892706, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  prone: []
 --- !u!4 &1879297312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6673178217058760058, guid: 0e8a02f84be9e8548a1fa9417bfcca08, type: 3}
+  m_PrefabInstance: {fileID: 4588079545728626817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1879297313 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5979506977823384606, guid: 0e8a02f84be9e8548a1fa9417bfcca08, type: 3}
   m_PrefabInstance: {fileID: 4588079545728626817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1924460724
