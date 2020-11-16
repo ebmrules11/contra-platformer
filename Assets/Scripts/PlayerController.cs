@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool isProning = false;
     public bool jumpDown = false;
     private Rigidbody2D rb;
-    private bool facingRight = true;
+    public bool facingRight = true;
     private float moveDirection;
     [SerializeField] private bool isGrounded;
 	
@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
     private void FlipCharacter()
     {
         facingRight = !facingRight;
-      //  transform.Rotate(0f, 180f, 0f);
+        //transform.Translate(0f, 180f, 0f, Space relativeTo = Space.Self);
     }
 
     IEnumerator SetjumpDownFalse()
