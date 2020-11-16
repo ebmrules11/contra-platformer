@@ -542,6 +542,7 @@ MonoBehaviour:
   jumpDown: 0
   facingRight: 1
   isGrounded: 0
+  mousePos: {x: 0, y: 0}
   bulletPrefab: {fileID: 1627881808781700805, guid: f74eedb05cd459444bd50f0d57482566, type: 3}
   bulletOriginT: {fileID: 1695346843}
   fireCooldown: 0.3
@@ -606,7 +607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459134c4fb3485245aa0c70da0578bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletLifetime: 1
+  bulletList: []
+  timeList: []
+  bulletLifetime: 2
 --- !u!4 &1879297312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6673178217058760058, guid: 0e8a02f84be9e8548a1fa9417bfcca08, type: 3}
