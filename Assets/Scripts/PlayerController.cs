@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float moveSpeed;
     public float jumpForce;
     public Transform GroundCheck;
@@ -54,7 +53,6 @@ public class PlayerController : MonoBehaviour
 
         Animate();
 
-       
     }
     private void Move()
     {
@@ -127,7 +125,7 @@ public class PlayerController : MonoBehaviour
     private void FlipCharacter()
     {
         facingRight = !facingRight;
-        transform.Rotate(0f, 180f, 0f);
+      //  transform.Rotate(0f, 180f, 0f);
     }
 
     IEnumerator SetjumpDownFalse()
