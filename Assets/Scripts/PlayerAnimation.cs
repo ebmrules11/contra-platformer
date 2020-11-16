@@ -37,6 +37,8 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		
+		/*
         if(Input.GetKey(KeyCode.W)){
 			setAnimation(JUMPING);
 		}
@@ -46,6 +48,7 @@ public class PlayerAnimation : MonoBehaviour
 		if(Input.GetKey(KeyCode.D)){
 			setAnimation(RUNNING);
 		}
+		*/
 		
 		if(timePass >= .1f){
 			spriteRenderer.sprite = spriteArray[animIndex];
