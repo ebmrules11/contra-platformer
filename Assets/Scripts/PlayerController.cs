@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     private float moveDirection;
     [SerializeField] private bool isGrounded;
 	
+	public Vector2 mousePos;
+	private bool lookingUp;
+	private bool lookingDown;
+	
 	// shooting
 	[SerializeField] GameObject bulletPrefab;
 	[SerializeField] Transform bulletOriginT;
@@ -69,7 +73,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Animate()
     {
+	
 		if(Mathf.Abs(moveDirection) > .1f){
+			/*
 			if (moveDirection > 0 && !facingRight)
 			{
 				FlipCharacter();
@@ -78,6 +84,7 @@ public class PlayerController : MonoBehaviour
 			{
 				FlipCharacter();
 			}
+			*/
 			if(isGrounded){
 				animation.setAnimation(PlayerAnimation.RUNNING);
 			}
@@ -97,6 +104,31 @@ public class PlayerController : MonoBehaviour
     private void ProcessInputs()
     {
         moveDirection = Input.GetAxis("Horizontal");
+		
+		// calculate position of mouse cursor
+		mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		float dx = mousePos.x - transform.position.x;
+		float dy = mousePos.y - transform.position.y;
+		if(dx > 0f){
+			if(!facingRight){
+				FlipCharacter();
+			}
+		}else{
+			if(facingRight){
+				FlipCharacter();
+			}
+		}
+		if(Mathf.Abs(dy) > 3f){
+			if(dy > 0f){
+				lookingUp = true;
+			}else{
+				lookingDown = true;
+			}
+		}else{
+			lookingUp = false;
+			lookingDown = false;
+		}
+		
         
         if(Input.GetButton("Prone"))
         {
@@ -136,15 +168,22 @@ public class PlayerController : MonoBehaviour
 	
 	
 	private void fire(){
+		
+		// calculate direction of bullet
 		float velX;
 		float velY;
-		if(facingRight){ velX = 8f; }
-		else{ velX = -8f; }
-		velY = 0f;
+		if(facingRight){ velX = 1f; }
+		else{ velX = -1f; }
+		
+		
+		
+		//Vector2 bulletVelocity = (new Vector2(velX, velY).normalized)*8f;
+		Vector2 bulletVelocity = ((mousePos - new Vector2(transform.position.x, transform.position.y)).normalized)*8f;
+		
 		
 		GameObject bullet = Instantiate(bulletPrefab);
 		bullet.transform.position = bulletOriginT.position;
-		bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(velX, velY);
+		bullet.GetComponent<Rigidbody2D>().velocity = bulletVelocity;
 		
 		projectileController.addProjectile(bullet);
 	}
