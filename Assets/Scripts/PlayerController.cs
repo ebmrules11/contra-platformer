@@ -65,10 +65,6 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, jumpForce));
         }
-       /*else if (jumpDown)
-        {
-            effector.rotationalOffset = 180f;
-        }*/
         isJumping = false;
     }
     private void Animate()
@@ -128,8 +124,8 @@ public class PlayerController : MonoBehaviour
 			lookingUp = false;
 			lookingDown = false;
 		}
+
 		
-        
         if(Input.GetButton("Prone"))
         {
             isProning = true;
@@ -137,14 +133,18 @@ public class PlayerController : MonoBehaviour
             {
                 jumpDown = true;
             }
-            StartCoroutine(SetjumpDownFalse());
+			jumpDown = false;
         }
         
         else if (Input.GetButtonDown("Jump") && isGrounded && !isProning)
         {
             isJumping = true;
         }
-        isProning = false;
+        else
+        {
+			isProning = false;
+		}
+        
 		
 		if(Input.GetMouseButton(0)){
 			if(timeSinceLastFire >= fireCooldown){
@@ -157,15 +157,7 @@ public class PlayerController : MonoBehaviour
     private void FlipCharacter()
     {
         facingRight = !facingRight;
-        //transform.Translate(0f, 180f, 0f, Space relativeTo = Space.Self);
     }
-
-    IEnumerator SetjumpDownFalse()
-    {
-        yield return new WaitForSeconds(.75f);
-        jumpDown = false;
-    }
-	
 	
 	private void fire(){
 		
