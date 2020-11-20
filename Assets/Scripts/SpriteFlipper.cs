@@ -5,12 +5,12 @@ using UnityEngine;
 public class SpriteFlipper : MonoBehaviour
 {
     private SpriteRenderer mySpriteRenderer;
-    public GameObject gameObject;
+   // public GameObject gameObject;
     // Start is called before the first frame update
     void Start()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        gameObject = GameObject.FindGameObjectWithTag("Player");
+        //gameObject = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

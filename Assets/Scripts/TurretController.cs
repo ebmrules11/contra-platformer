@@ -10,7 +10,7 @@ public class TurretController : MonoBehaviour
 
 
     private Rigidbody2D rb;
-    private float currentTime = 0f;
+    //private float currentTime = 0f;
 
    
     void Start()
