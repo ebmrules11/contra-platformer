@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping = false;
     public bool isProning = false;
     public bool jumpDown = false;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public bool facingRight = true;
     private float moveDirection;
     [SerializeField] private bool isGrounded;
