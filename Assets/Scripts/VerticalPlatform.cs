@@ -17,11 +17,18 @@ public class VerticalPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.GetComponent<PlayerController>().jumpDown)
+        if (Input.GetButton("Prone"))
         {
-            effector.rotationalOffset = 180f;
+            if (Input.GetButton("Jump"))
+            {
+                effector.rotationalOffset = 180f;
+            }
+            else
+            {
+                effector.rotationalOffset = 0;
+            }
         }
-        else if(Input.GetKey(KeyCode.Space))
+        else
         {
             effector.rotationalOffset = 0;
         }
