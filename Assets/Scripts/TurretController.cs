@@ -7,7 +7,7 @@ public class TurretController : MonoBehaviour
 
 
     public Transform player;
-
+    public int[] angles;
 
     private Rigidbody2D rb;
     //private float currentTime = 0f;
@@ -22,22 +22,12 @@ public class TurretController : MonoBehaviour
     void Update()
     {
         Vector3 dir = player.position - transform.position;
+        float rawAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        int angIdx = 0;
 
-        rb.rotation = angle;
+        
 
-        /*
-        if (currentTime >= rotationWait)
-        {
-            // rotate image here
-
-            currentTime = 0f;
-        }
-        else
-        {
-            currentTime += Time.deltaTime;
-        }
-        */
+        rb.rotation = rawAngle;
     }
 }
