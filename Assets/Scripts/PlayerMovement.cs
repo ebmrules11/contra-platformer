@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace ReadLine
+{
 public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -11,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     float horizontalMove = 0f;
-    public float runSpeed = 40f;
+    public float runSpeed = 3f;
     bool jump = false;
     bool crouch = false;
     void Start()
@@ -27,14 +30,15 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         if(Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            animator.SetBool("isJumping", true);
-        }
+            {
+                jump = true;
+                animator.SetBool("isJumping", true);
+            }
         if(Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        }
+            {
+                Console.WriteLine("Crouch pressed");
+                crouch = true;
+            }
         else if(Input.GetButtonUp("Crouch"))
         {
             crouch = false;
@@ -49,9 +53,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate ()
     {
         //move the same speed across all platforms using delta time
-
+        //takes in speed, prone bool, jump bool
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+
+
         jump = false;
 
     }
+}
 }
