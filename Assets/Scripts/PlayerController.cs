@@ -42,20 +42,21 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, groundObjects);
-		
-		timeSinceLastFire += Time.deltaTime;
-		
-
-        Move();
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
-
+       isGrounded = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, groundObjects);
+		
+		
+		
+		ProcessInputs();
+		Move();
         Animate();
+		
+		timeSinceLastFire += Time.deltaTime;
 
     }
     private void Move()
@@ -100,30 +101,6 @@ public class PlayerController : MonoBehaviour
     private void ProcessInputs()
     {
         moveDirection = Input.GetAxis("Horizontal");
-		
-		// calculate position of mouse cursor
-		mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		float dx = mousePos.x - transform.position.x;
-		float dy = mousePos.y - transform.position.y;
-		if(dx > 0f){
-			if(!facingRight){
-				FlipCharacter();
-			}
-		}else{
-			if(facingRight){
-				FlipCharacter();
-			}
-		}
-		if(Mathf.Abs(dy) > 3f){
-			if(dy > 0f){
-				lookingUp = true;
-			}else{
-				lookingDown = true;
-			}
-		}else{
-			lookingUp = false;
-			lookingDown = false;
-		}
 
 		
         if(Input.GetButton("Prone"))
@@ -152,6 +129,35 @@ public class PlayerController : MonoBehaviour
 				timeSinceLastFire = 0f;
 			}
 		}
+		
+		
+		
+		// MOUSE AIMING
+		/*
+		// calculate position of mouse cursor
+		mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		float dx = mousePos.x - transform.position.x;
+		float dy = mousePos.y - transform.position.y;
+		if(dx > 0f){
+			if(!facingRight){
+				FlipCharacter();
+			}
+		}else{
+			if(facingRight){
+				FlipCharacter();
+			}
+		}
+		if(Mathf.Abs(dy) > 3f){
+			if(dy > 0f){
+				lookingUp = true;
+			}else{
+				lookingDown = true;
+			}
+		}else{
+			lookingUp = false;
+			lookingDown = false;
+		}
+		*/
 
     }
     private void FlipCharacter()
@@ -166,12 +172,8 @@ public class PlayerController : MonoBehaviour
 		float velY;
 		if(facingRight){ velX = 1f; }
 		else{ velX = -1f; }
-		
-		
-		
-		//Vector2 bulletVelocity = (new Vector2(velX, velY).normalized)*8f;
-		Vector2 bulletVelocity = ((mousePos - new Vector2(transform.position.x, transform.position.y)).normalized)*8f;
-		
+		velY = 0f;
+		Vector2 bulletVelocity = (new Vector2(velX, velY).normalized)*8f;
 		
 		GameObject bullet = Instantiate(bulletPrefab);
 		bullet.transform.position = bulletOriginT.position;
