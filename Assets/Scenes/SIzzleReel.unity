@@ -151,7 +151,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267689872103659026}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71457816a530c724295d1c1be277d410, type: 3}
   m_Name: 
@@ -2578,6 +2578,7 @@ GameObject:
   - component: {fileID: 9}
   - component: {fileID: 2922642880758320223}
   - component: {fileID: 759595214}
+  - component: {fileID: 1267689872103659027}
   m_Layer: 10
   m_Name: Contra
   m_TagString: Player
@@ -2585,6 +2586,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1267689872103659027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267689872103659026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434494bd35269514a95c914cbc23b2bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2922642880758320223
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
     {
 	
 		if(Mathf.Abs(moveDirection) > .1f){
-			/*
+			
 			if (moveDirection > 0 && !facingRight)
 			{
 				FlipCharacter();
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
 			{
 				FlipCharacter();
 			}
-			*/
+			
 			if(isGrounded){
 				animation.setAnimation(PlayerAnimation.RUNNING);
 			}
