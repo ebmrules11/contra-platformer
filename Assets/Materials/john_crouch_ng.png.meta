@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -5065176491993891428
     second: john_crouch_ng_1
+  - first:
+      213: -8627115172341010687
+    second: john_crouch_ng_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +106,7 @@ TextureImporter:
         width: 19
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -122,9 +125,9 @@ TextureImporter:
         x: 27
         y: 0
         width: 25
-        height: 13
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -49,6 +49,13 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetBool("isJumping", false);
     }
+
+
+    public void onCrouching(bool isCrouching)
+    {
+        animator.SetBool("isCrouching", isCrouching);
+    }
+
     //this is where the movement is activated using the input
     void FixedUpdate ()
     {
