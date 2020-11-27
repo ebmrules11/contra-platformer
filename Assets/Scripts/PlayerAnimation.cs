@@ -29,6 +29,7 @@ public class PlayerAnimation : MonoBehaviour
 	
 	bool changingSpriteColor;
 	bool flashingSpriteColor;
+	public bool deathComplete;
 	
 	
 	
@@ -99,11 +100,11 @@ public class PlayerAnimation : MonoBehaviour
 		}
 	}
 	
-	public void die(bool respawn){
+	public void die(){
 		if(!flashingSpriteColor){
 			Color originalColor = spriteRenderer.color;
 			Color flashColor = Color.clear;
-			StartCoroutine(flashSpriteColor(originalColor, flashColor, .1f));
+			StartCoroutine(flashDeathColors(originalColor, flashColor, .1f));
 		}
 	}
 	
@@ -115,7 +116,7 @@ public class PlayerAnimation : MonoBehaviour
 		spriteRenderer.color = c0;
 		changingSpriteColor = false;
 	}
-	IEnumerator flashSpriteColor(Color c0, Color c1, float flashSpeed){
+	IEnumerator flashDeathColors(Color c0, Color c1, float flashSpeed){
 		flashingSpriteColor = true;
 		for(int i = 0; i < 10; i++){
 			spriteRenderer.color = c1;
@@ -124,6 +125,7 @@ public class PlayerAnimation : MonoBehaviour
 			yield return new WaitForSeconds(flashSpeed);
 		}
 		flashingSpriteColor = false;
-		GameObject.Destroy(this.gameObject);
+		spriteRenderer.color = Color.white;
+		deathComplete = true;
 	}
 }

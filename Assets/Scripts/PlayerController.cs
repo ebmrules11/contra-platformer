@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
 	public BoxCollider2D colliderOnDeath;
 	public int health;
 	public int lives;
+	public GameObject GameOverScreen;
 	
 	public PlayerAnimation animation;
 	public ProjectileController projectileController;
@@ -210,23 +211,47 @@ public class PlayerController : MonoBehaviour
 	}
 	
 	private void takeHit(){
-		health--;
-		animation.takeHit();
-		if(health <= 0){
-			collider.enabled = false;
-			colliderOnDeath.enabled = true;
-			die();
-			lives--;
-			if(lives <= 0){
-				gameOver();
+		if(isAlive){
+			health--;
+			animation.takeHit();
+			if(health <= 0){
+				collider.enabled = false;
+				colliderOnDeath.enabled = true;
+				lives--;
+				if(lives > 0){
+					die(true);
+				}
+				else{
+					die(false);
+					gameOver();
+				}
 			}
 		}
 	}
 	
-	private void die(){
+	private void die(bool respawn){
 		isAlive = false;
-		animation.die(true);
-
+		animation.die();
+		if(respawn){
+			StartCoroutine(respawnAfterDeath());
+		}
+		else{
+			StartCoroutine(destroyAfterDeath());
+		}
+	}
+	IEnumerator respawnAfterDeath(){
+		yield return new WaitUntil(() => animation.deathComplete);
+		animation.deathComplete = false;
+		isAlive = true;
+		health = 1;
+		rb.AddForce(Vector2.up*jumpForce*.7f);
+		collider.enabled = true;
+		colliderOnDeath.enabled = false;
+	}
+	IEnumerator destroyAfterDeath(){
+		yield return new WaitUntil(() => animation.deathComplete);
+		GameObject.Destroy(this.gameObject);
+		GameOverScreen.SetActive(true);
 	}
 	
 	private void gameOver(){

@@ -8,6 +8,7 @@ public class MenuController : MonoBehaviour
 	
 	public GameObject button_playClone;
 	public GameObject button_playVariant;
+	public GameObject button_mainMenu;
 	
 	
 	
@@ -16,6 +17,9 @@ public class MenuController : MonoBehaviour
 	}
 	public void playVariant(){
 		SceneManager.LoadScene (sceneName:"VariantScene");
+	}
+	public void goToMainMenu(){
+		SceneManager.LoadScene (sceneName:"MenuScene");
 	}
 	
 	

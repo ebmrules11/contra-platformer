@@ -191,8 +191,12 @@ public class EnemyMovement : MonoBehaviour
 	
 	private void die(){
 		isAlive = false;
-		animation.die(false);
-
+		animation.die();
+		StartCoroutine(destroyAfterDeath());
+	}
+	IEnumerator destroyAfterDeath(){
+		yield return new WaitUntil(() => animation.deathComplete);
+		GameObject.Destroy(this.gameObject);
 	}
 	
 	void OnTriggerEnter2D(Collider2D otherCollider){
