@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 9d0fa589a284d1d4ab320df918d9e842
+  - enabled: 1
     path: Assets/Scenes/SIzzleReel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/VariantScene.unity
+    guid: 90aff78933dc9a1458c6f4445fcac0ff
   m_configObjects: {}

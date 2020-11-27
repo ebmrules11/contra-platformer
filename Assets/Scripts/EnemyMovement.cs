@@ -88,12 +88,14 @@ public class EnemyMovement : MonoBehaviour
 			Vector2 dir = player.transform.position - bulletOriginT.transform.position;
 			
 			// turn towards player's direction
-			facingRight = (dir.x >= 0f);
-			if(facingRight){
-				transform.localScale = new Vector2(1f, 1f);
-			}
-			else{
-				transform.localScale = new Vector2(-1f, 1f);
+			if(Mathf.Abs(dir.x) > 1f){
+				facingRight = (dir.x >= 0f);
+				if(facingRight){
+					transform.localScale = new Vector2(1f, 1f);
+				}
+				else{
+					transform.localScale = new Vector2(-1f, 1f);
+				}
 			}
 			if(edgeDetected || wallDetected){
 				moveSpeed = moveSpeed_stop;
@@ -127,11 +129,16 @@ public class EnemyMovement : MonoBehaviour
 	void fire(){
 		
 		// calculate direction of bullet
+		Vector2 dir = player.transform.position - bulletOriginT.transform.position;
 		float velX;
 		float velY;
 		if(facingRight){ velX = 1f; }
 		else{ velX = -1f; }
-		velY = 0f;
+		if(Mathf.Abs(dir.y) >= (dir.magnitude)/2f){
+			if(dir.y > 0f){
+				velY = 1f;
+			} else{ velY = -1f; }
+		} else{ velY = 0f; }
 		Vector2 bulletVelocity = (new Vector2(velX, velY).normalized)*8f;
 		
 		GameObject bullet = Instantiate(bulletPrefab);
