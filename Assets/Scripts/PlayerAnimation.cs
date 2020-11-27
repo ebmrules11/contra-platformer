@@ -11,6 +11,7 @@ public class PlayerAnimation : MonoBehaviour
 	public Sprite[] jumping;
 	public Sprite[] running;
 	public Sprite[] prone;
+	public Sprite[] dying;
 	
 	
 	
@@ -24,6 +25,10 @@ public class PlayerAnimation : MonoBehaviour
 	public static int JUMPING = 1;
 	public static int RUNNING = 2;
 	public static int PRONE = 3;
+	public static int DYING = 4;
+	
+	bool changingSpriteColor;
+	bool flashingSpriteColor;
 	
 	
 	
@@ -75,11 +80,50 @@ public class PlayerAnimation : MonoBehaviour
 					spriteArray = running;
 					break;
 				case 3:
-					//spriteArray = shooting;
+					spriteArray = prone;
+					break;
+				case 4:
+					spriteArray = dying;
 					break;
 				default:
 					break;
 			}
 		}
+	}
+	
+	public void takeHit(){
+		if(!changingSpriteColor){
+			Color originalColor = spriteRenderer.color;
+			Color hitColor = Color.red;
+			StartCoroutine(changeSpriteColor(originalColor, hitColor, .2f));
+		}
+	}
+	
+	public void die(bool respawn){
+		if(!flashingSpriteColor){
+			Color originalColor = spriteRenderer.color;
+			Color flashColor = Color.clear;
+			StartCoroutine(flashSpriteColor(originalColor, flashColor, .1f));
+		}
+	}
+	
+	// starts another thread, allowing us to change color over time
+	IEnumerator changeSpriteColor(Color c0, Color c1, float time){
+		changingSpriteColor = true;
+		spriteRenderer.color = c1;
+		yield return new WaitForSeconds(time);
+		spriteRenderer.color = c0;
+		changingSpriteColor = false;
+	}
+	IEnumerator flashSpriteColor(Color c0, Color c1, float flashSpeed){
+		flashingSpriteColor = true;
+		for(int i = 0; i < 10; i++){
+			spriteRenderer.color = c1;
+			yield return new WaitForSeconds(flashSpeed);
+			spriteRenderer.color = c0;
+			yield return new WaitForSeconds(flashSpeed);
+		}
+		flashingSpriteColor = false;
+		GameObject.Destroy(this.gameObject);
 	}
 }

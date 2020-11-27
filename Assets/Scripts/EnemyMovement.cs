@@ -36,21 +36,28 @@ public class EnemyMovement : MonoBehaviour
 	[SerializeField] float fireCooldown;
 	float timeSinceLastFire;
 	
+	// taking damage
+	public bool isAlive;
+	public BoxCollider2D collider;
+	public BoxCollider2D colliderOnDeath;
+	public int health;
+	
     // Start is called before the first frame update
     void Start()
     {
+		isAlive = true;
         facingRight = true;
     }
 	
 	void FixedUpdate(){
 		
-		checkSurroundings();
-		
-		if(isGrounded){
-			walk();
+		if(isAlive){
+			checkSurroundings();
+			if(isGrounded){
+				walk();
+			}
 		}
 		animate();
-		
 	}
 
     // Update is called once per frame
@@ -74,7 +81,6 @@ public class EnemyMovement : MonoBehaviour
 		float distanceFromPlayer = Vector2.Distance(transform.position, player.transform.position);
 		if(distanceFromPlayer < sensingDistance){
 			playerDetected = true;
-			Debug.Log("PLAYER DETECTED");
 		}else{ playerDetected = false; }
 		
 		// if player detected, face player and fire
@@ -149,21 +155,51 @@ public class EnemyMovement : MonoBehaviour
 	}
 	
 	void animate(){
-		if(moveSpeed > .1f){
-			if(isGrounded){
-				animation.setAnimation(PlayerAnimation.RUNNING);
+		if(isAlive){
+			if(moveSpeed > .1f){
+				if(isGrounded){
+					animation.setAnimation(PlayerAnimation.RUNNING);
+				}
+				else{
+					animation.setAnimation(PlayerAnimation.JUMPING);
+				}
 			}
 			else{
-				animation.setAnimation(PlayerAnimation.JUMPING);
+				if(isGrounded){
+					animation.setAnimation(PlayerAnimation.STANDING);
+				}
+				else{
+					animation.setAnimation(PlayerAnimation.JUMPING);
+				}
 			}
 		}
 		else{
-			if(isGrounded){
-				animation.setAnimation(PlayerAnimation.STANDING);
-			}
-			else{
-				animation.setAnimation(PlayerAnimation.JUMPING);
-			}
+			animation.setAnimation(PlayerAnimation.DYING);
+		}
+	}
+	
+	
+	private void takeHit(){
+		health--;
+		animation.takeHit();
+		if(health <= 0){
+			collider.enabled = false;
+			colliderOnDeath.enabled = true;
+			die();
+		}
+	}
+	
+	private void die(){
+		isAlive = false;
+		animation.die(false);
+
+	}
+	
+	void OnTriggerEnter2D(Collider2D otherCollider){
+		GameObject obj = otherCollider.gameObject;
+		if(obj.tag == "Projectile"){
+			takeHit();
+			GameObject.Destroy(obj);
 		}
 	}
 }
