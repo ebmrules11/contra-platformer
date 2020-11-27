@@ -25,8 +25,9 @@ public class EnemyMovement : MonoBehaviour
 	public bool isGrounded;
 	
 	// player detection
+	public GameObject player;
+	public float sensingDistance;
 	public bool playerDetected;
-	public LayerMask playerMask;
 	
 	// shooting
 	[SerializeField] ProjectileController projectileController;
@@ -69,19 +70,39 @@ public class EnemyMovement : MonoBehaviour
 		// detect if grounded
 		isGrounded = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, groundObjects);
 		
-		// detect if player is in line of sight
-		Vector2 lookDirection = Vector2.zero;
-		if(facingRight){
-			lookDirection = Vector2.right;
+		// detect if player is within range;
+		float distanceFromPlayer = Vector2.Distance(transform.position, player.transform.position);
+		if(distanceFromPlayer < sensingDistance){
+			playerDetected = true;
+			Debug.Log("PLAYER DETECTED");
+		}else{ playerDetected = false; }
+		
+		// if player detected, face player and fire
+		if(playerDetected){
+			if(timeSinceLastFire >= fireCooldown){
+				fire();
+				timeSinceLastFire = 0f;
+			}
+			
+			// get direction between enemy and player
+			Vector2 dir = player.transform.position - bulletOriginT.transform.position;
+			
+			// turn towards player's direction
+			facingRight = (dir.x >= 0f);
+			if(facingRight){
+				transform.localScale = new Vector2(1f, 1f);
+			}
+			else{
+				transform.localScale = new Vector2(-1f, 1f);
+			}
+			if(edgeDetected || wallDetected){
+				moveSpeed = moveSpeed_stop;
+			}else{ moveSpeed = moveSpeed_full; }
 		}
+		
+		// else, do normal patrol
 		else{
-			lookDirection = Vector2.left;
-		}
-		playerDetected = Physics2D.Raycast(transform.position, lookDirection, 10f, playerMask);
-		
-		
-		if(edgeDetected || wallDetected){
-			if(!playerDetected){
+			if(edgeDetected || wallDetected){
 				facingRight = !facingRight;
 				if(facingRight){
 					transform.localScale = new Vector2(1f, 1f);
@@ -90,18 +111,6 @@ public class EnemyMovement : MonoBehaviour
 					transform.localScale = new Vector2(-1f, 1f);
 				}
 			}
-		}
-		
-		
-		if(playerDetected){
-			moveSpeed = moveSpeed_stop;
-			if(timeSinceLastFire >= fireCooldown){
-				fire();
-				timeSinceLastFire = 0f;
-			}
-		}
-		else{
-			moveSpeed = moveSpeed_full;
 		}
 	}
 	
