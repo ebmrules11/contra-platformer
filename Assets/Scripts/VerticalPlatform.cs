@@ -5,13 +5,13 @@ using UnityEngine;
 public class VerticalPlatform : MonoBehaviour
 {
     private PlatformEffector2D effector;
-    //public GameObject gameObject;
-    public float waitTime;
+    private LayerMask fallThroughPlatform;
+    private GameObject contra;
     // Start is called before the first frame update
     void Start()
     {
         effector = GetComponent<PlatformEffector2D>();
-        //gameObject = GameObject.FindGameObjectWithTag("Player");
+        contra = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -21,16 +21,16 @@ public class VerticalPlatform : MonoBehaviour
         {
             if (Input.GetButton("Jump"))
             {
-                effector.rotationalOffset = 180f;
+                contra.layer = LayerMask.NameToLayer("IgnorePlatforms");
             }
             else
             {
-                effector.rotationalOffset = 0;
+                contra.layer = LayerMask.NameToLayer("Player");
             }
         }
         else
         {
-            effector.rotationalOffset = 0;
+            contra.layer = LayerMask.NameToLayer("Player");
         }
     }
 }
