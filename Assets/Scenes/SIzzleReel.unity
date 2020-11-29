@@ -169,7 +169,7 @@ MonoBehaviour:
   facingRight: 1
   isGrounded: 0
   mousePos: {x: 0, y: 0}
-  bulletPrefab: {fileID: 1627881808781700805, guid: f74eedb05cd459444bd50f0d57482566, type: 3}
+  bulletPrefab: {fileID: 1627881808781700805, guid: 987fd4dac76d9ad44867a2d4dfc76cff, type: 3}
   bulletOriginT: {fileID: 1715873697}
   fireCooldown: 0.3
   isAlive: 0

@@ -201,7 +201,7 @@ public class EnemyMovement : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D otherCollider){
 		GameObject obj = otherCollider.gameObject;
-		if(obj.tag == "Projectile"){
+		if(obj.tag == "PlayerProjectile"){
 			takeHit();
 			GameObject.Destroy(obj);
 		}
