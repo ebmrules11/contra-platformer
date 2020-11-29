@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: 71e486fc9ce10424fada74ead475196e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8936288114101589245
+    second: BossScreen_Anim_openmouth_fire_0
+  - first:
+      213: 1728360309652643011
+    second: BossScreen_Anim_openmouth_fire_1
+  - first:
+      213: 7209653021434391330
+    second: BossScreen_Anim_openmouth_fire_2
+  - first:
+      213: -4544081273867470395
+    second: BossScreen_Anim_openmouth_fire_3
+  - first:
+      213: -5537532642700382169
+    second: BossScreen_Anim_openmouth_fire_4
+  - first:
+      213: 9183010818655584572
+    second: BossScreen_Anim_openmouth_fire_5
+  - first:
+      213: 2901133162041867167
+    second: BossScreen_Anim_openmouth_fire_6
+  - first:
+      213: -2133309302310529766
+    second: BossScreen_Anim_openmouth_fire_7
+  - first:
+      213: -328282409813747247
+    second: BossScreen_Anim_openmouth_fire_8
+  - first:
+      213: -4975516320254668203
+    second: BossScreen_Anim_openmouth_fire_9
+  - first:
+      213: -2994537201078921105
+    second: BossScreen_Anim_openmouth_fire_10
+  - first:
+      213: 6854784632626885129
+    second: BossScreen_Anim_openmouth_fire_11
+  - first:
+      213: 6732661108119940718
+    second: BossScreen_Anim_openmouth_fire_0
+  - first:
+      213: -8433078674091523325
+    second: BossScreen_Anim_openmouth_fire_1
+  - first:
+      213: 90966693872556846
+    second: BossScreen_Anim_openmouth_fire_2
+  - first:
+      213: -2448787786596378437
+    second: BossScreen_Anim_openmouth_fire_3
+  - first:
+      213: 3326299845874335323
+    second: BossScreen_Anim_openmouth_fire_4
+  - first:
+      213: -4353465671175752899
+    second: BossScreen_Anim_openmouth_fire_5
+  - first:
+      213: 2806477493991445296
+    second: BossScreen_Anim_openmouth_fire_6
+  - first:
+      213: -5626561975546186153
+    second: BossScreen_Anim_openmouth_fire_7
+  - first:
+      213: 6615516320133146213
+    second: BossScreen_Anim_openmouth_fire_8
+  - first:
+      213: -8649007559029472899
+    second: BossScreen_Anim_openmouth_fire_9
+  - first:
+      213: -5720866848365221809
+    second: BossScreen_Anim_openmouth_fire_10
+  - first:
+      213: 6084375215564226230
+    second: BossScreen_Anim_openmouth_fire_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ea39e4b973f6d50800000000000000
+      internalID: 6732661108119940718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3034ad350afa7fa80800000000000000
+      internalID: -8433078674091523325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b5aa2e9bd234100800000000000000
+      internalID: 90966693872556846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb89b997b78240ed0800000000000000
+      internalID: -2448787786596378437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eb6c91614692e20800000000000000
+      internalID: 3326299845874335323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3336b7a9026593c0800000000000000
+      internalID: -4353465671175752899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0331d73596c92f620800000000000000
+      internalID: 2806477493991445296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75679dca1bf6ae1b0800000000000000
+      internalID: -5626561975546186153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_8
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566e55bea090fcb50800000000000000
+      internalID: 6615516320133146213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d714160137d88f780800000000000000
+      internalID: -8649007559029472899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_10
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48e1ef69e56b90b0800000000000000
+      internalID: -5720866848365221809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossScreen_Anim_openmouth_fire_11
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 45
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be75eba50b007450800000000000000
+      internalID: 6084375215564226230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
