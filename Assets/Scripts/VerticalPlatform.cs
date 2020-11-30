@@ -21,16 +21,24 @@ public class VerticalPlatform : MonoBehaviour
         {
             if (Input.GetButton("Jump"))
             {
-                contra.layer = LayerMask.NameToLayer("IgnorePlatforms");
+                StartCoroutine(flip());
+                //contra.layer = LayerMask.NameToLayer("IgnorePlatforms");
             }
             else
             {
-                contra.layer = LayerMask.NameToLayer("Player");
+                //contra.layer = LayerMask.NameToLayer("Player");
             }
         }
         else
         {
-            contra.layer = LayerMask.NameToLayer("Player");
+           // contra.layer = LayerMask.NameToLayer("Player");
         }
+    }
+
+    IEnumerator flip()
+    {
+        contra.layer = LayerMask.NameToLayer("IgnorePlatforms");
+        yield return new WaitForSecondsRealtime(0.5f);
+        contra.layer = LayerMask.NameToLayer("Player");
     }
 }
