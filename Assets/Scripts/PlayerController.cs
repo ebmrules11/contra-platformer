@@ -280,6 +280,10 @@ public class PlayerController : MonoBehaviour
 			takeHit();
 			GameObject.Destroy(obj);
 		}
+        else if(obj.tag == "Powerup")
+        {
+            GameObject.Destroy(obj);
+        }
 	}
 
 }

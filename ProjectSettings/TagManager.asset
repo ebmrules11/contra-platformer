@@ -7,6 +7,7 @@ TagManager:
   - Platform
   - Projectile
   - PlayerProjectile
+  - Powerup
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Background
   - Projectile
   - IgnorePlatforms
-  - 
+  - Powerup
   - 
   - 
   - 
