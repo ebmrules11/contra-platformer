@@ -36,12 +36,16 @@ public class PlayerController : MonoBehaviour
 	public int lives;
 	public GameObject GameOverScreen;
 	
+	public GameObject lifePanel;	// panel at the top showing lives
+	public GameObject lifeImagePrefab;
+	
 	public PlayerAnimation animation;
 	public ProjectileController projectileController;
 
     void Awake()
     {
 		isAlive = true;
+		setLifePanel(lives);
         rb = GetComponent<Rigidbody2D>();
 		timeSinceLastFire = 0f;
     }
@@ -218,6 +222,7 @@ public class PlayerController : MonoBehaviour
 				collider.enabled = false;
 				colliderOnDeath.enabled = true;
 				lives--;
+				setLifePanel(lives);
 				if(lives > 0){
 					die(true);
 				}
@@ -255,6 +260,17 @@ public class PlayerController : MonoBehaviour
 	}
 	
 	private void gameOver(){
+		
+	}
+	
+	// sets number of icons shown at the top
+	void setLifePanel(int lives){
+		foreach (Transform child in lifePanel.transform) {
+			GameObject.Destroy(child.gameObject);
+		}
+		for(int i = 0; i < lives; i++){
+			Instantiate(lifeImagePrefab, lifePanel.transform);
+		}
 		
 	}
 	
