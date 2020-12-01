@@ -259,7 +259,7 @@ MonoBehaviour:
   projectileController: {fileID: 6210972260556223617}
   bulletPrefab: {fileID: 1627881808781700805, guid: f74eedb05cd459444bd50f0d57482566, type: 3}
   bulletOriginT: {fileID: 6210972260051125127}
-  fireCooldown: 0.6
+  fireCooldown: 1.1
   isAlive: 0
   collider: {fileID: 6210972260556223630}
   colliderOnDeath: {fileID: 6210972260556223623}

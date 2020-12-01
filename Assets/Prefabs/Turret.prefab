@@ -184,9 +184,9 @@ MonoBehaviour:
   projectileController: {fileID: 6591628961965130586}
   bulletPrefab: {fileID: 1627881808781700805, guid: f74eedb05cd459444bd50f0d57482566, type: 3}
   bulletOriginT: {fileID: 7479254846914968035}
-  fireCooldown: 0.2
+  fireCooldown: 0.8
   turretTimeStep: 0.5
-  sensingDistance: 0
+  sensingDistance: 5
 --- !u!114 &6591628961965130586
 MonoBehaviour:
   m_ObjectHideFlags: 0
