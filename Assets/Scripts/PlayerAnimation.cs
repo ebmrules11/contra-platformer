@@ -124,8 +124,14 @@ public class PlayerAnimation : MonoBehaviour
 			spriteRenderer.color = c0;
 			yield return new WaitForSeconds(flashSpeed);
 		}
+		deathComplete = true;
+		for(int i = 0; i < 4; i++){
+			spriteRenderer.color = c1;
+			yield return new WaitForSeconds(flashSpeed);
+			spriteRenderer.color = c0;
+			yield return new WaitForSeconds(flashSpeed);
+		}
 		flashingSpriteColor = false;
 		spriteRenderer.color = Color.white;
-		deathComplete = true;
 	}
 }

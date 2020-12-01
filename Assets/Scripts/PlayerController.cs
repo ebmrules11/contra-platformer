@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,13 +24,16 @@ public class PlayerController : MonoBehaviour
 	private bool lookingDown;
 	
 	// shooting
-	[SerializeField] GameObject bulletPrefab;
+	public GameObject bulletPrefab_regular;
+	public GameObject bulletPrefab_buckshot;
+	public GameObject bullet;
 	[SerializeField] Transform bulletOriginT;
-	[SerializeField] float fireCooldown;
+	public float fireCooldown;
 	float timeSinceLastFire;
 	
 	// taking damage
 	public bool isAlive;
+	public bool takesDamage;
 	public BoxCollider2D collider;
 	public BoxCollider2D colliderOnDeath;
 	public int health;
@@ -41,13 +45,17 @@ public class PlayerController : MonoBehaviour
 	
 	public PlayerAnimation animation;
 	public ProjectileController projectileController;
+	public Text powerupText;
 
     void Awake()
     {
 		isAlive = true;
+		takesDamage = true;
 		setLifePanel(lives);
+		bullet = bulletPrefab_regular;
         rb = GetComponent<Rigidbody2D>();
 		timeSinceLastFire = 0f;
+		powerupText.text = "";
     }
 
    
@@ -207,9 +215,9 @@ public class PlayerController : MonoBehaviour
 		velY = 0f;
 		Vector2 bulletVelocity = (new Vector2(velX, velY).normalized)*8f;
 		
-		GameObject bullet = Instantiate(bulletPrefab);
-		bullet.transform.position = bulletOriginT.position;
-		bullet.GetComponent<Rigidbody2D>().velocity = bulletVelocity;
+		GameObject blt = Instantiate(bullet);
+		blt.transform.position = bulletOriginT.position;
+		blt.GetComponent<Rigidbody2D>().velocity = bulletVelocity;
 		
 		projectileController.addProjectile(bullet);
 	}
@@ -252,6 +260,7 @@ public class PlayerController : MonoBehaviour
 		rb.AddForce(Vector2.up*jumpForce*.7f);
 		collider.enabled = true;
 		colliderOnDeath.enabled = false;
+		StartCoroutine(makeInvincible(1f));  //give player 1 second of invincibility after respawning
 	}
 	IEnumerator destroyAfterDeath(){
 		yield return new WaitUntil(() => animation.deathComplete);
@@ -264,24 +273,34 @@ public class PlayerController : MonoBehaviour
 	}
 	
 	// sets number of icons shown at the top
-	void setLifePanel(int lives){
+	public void setLifePanel(int lives){
 		foreach (Transform child in lifePanel.transform) {
 			GameObject.Destroy(child.gameObject);
 		}
 		for(int i = 0; i < lives; i++){
 			Instantiate(lifeImagePrefab, lifePanel.transform);
 		}
-		
+	}
+	
+	IEnumerator makeInvincible(float time){
+		takesDamage = false;
+		yield return new WaitForSeconds(time);
+		takesDamage = true;
 	}
 	
 	void OnTriggerEnter2D(Collider2D otherCollider){
 		GameObject obj = otherCollider.gameObject;
 		if(obj.tag == "Projectile"){
-			takeHit();
-			GameObject.Destroy(obj);
+			if(takesDamage){
+				takeHit();
+				GameObject.Destroy(obj);
+			}
 		}
         else if(obj.tag == "Powerup")
         {
+			// apply powerup's effect to player and destroy it
+			Powerup powerup = obj.GetComponent<Powerup>();
+			StartCoroutine(powerup.applyEffect(this.gameObject));
             GameObject.Destroy(obj);
         }
 	}
