@@ -323,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &60517364
@@ -357,7 +361,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -522,7 +526,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -919,6 +923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &165931005
@@ -979,6 +987,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -1122,6 +1134,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -1380,7 +1396,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -1532,7 +1548,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -1724,6 +1740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &434034322
@@ -1812,7 +1832,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -2004,6 +2024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &478257896
@@ -2052,7 +2076,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -2337,7 +2361,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -2575,7 +2599,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -2845,6 +2869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &680544146
@@ -2905,6 +2933,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -2967,6 +2999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &683152280
@@ -3015,7 +3051,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -3190,6 +3226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &702164921
@@ -3238,7 +3278,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -3390,7 +3430,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -3636,7 +3676,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -3829,6 +3869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &791758481
@@ -3886,6 +3930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &794885239
@@ -3934,7 +3982,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -4109,6 +4157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &802624376
@@ -4169,6 +4221,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -4465,7 +4521,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -4644,6 +4700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &869251767
@@ -4678,7 +4738,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -4865,6 +4925,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -5280,6 +5344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &929418466
@@ -5328,7 +5396,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -5507,6 +5575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &967199329
@@ -5568,6 +5640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &978772836
@@ -5624,6 +5700,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -5685,6 +5765,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -5816,7 +5900,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -6084,7 +6168,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -6488,7 +6572,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -6776,6 +6860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &1216280348
@@ -6836,6 +6924,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -6990,7 +7082,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -7209,6 +7301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &1282868192
@@ -7365,6 +7461,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -7535,6 +7635,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -7863,6 +7967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &1374099709
@@ -7924,6 +8032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &1403643326
@@ -7958,7 +8070,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -8147,6 +8259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &1481722602
@@ -8203,6 +8319,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -8264,6 +8384,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -8364,7 +8488,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -8557,6 +8681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &1629534120
@@ -8591,7 +8719,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -8770,7 +8898,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -9050,7 +9178,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -9212,6 +9340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &1715383560
@@ -9272,6 +9404,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -9351,7 +9487,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -9530,6 +9666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &1767116446
@@ -9587,6 +9727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &1815635805
@@ -9621,7 +9765,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -9818,6 +9962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &1876132264
@@ -9852,7 +10000,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -10044,6 +10192,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Name
       value: Platform (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
@@ -10278,6 +10430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1001 &2013362185
@@ -10339,6 +10495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
 --- !u!1 &2029391662
@@ -10373,7 +10533,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -10538,7 +10698,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -10717,7 +10877,7 @@ PlatformEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 24375
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
@@ -10977,6 +11137,10 @@ PrefabInstance:
     - target: {fileID: 476294035526936685, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 476294035526936686, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 24375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5441aa72c4725f43aacbcecc9739406, type: 3}
