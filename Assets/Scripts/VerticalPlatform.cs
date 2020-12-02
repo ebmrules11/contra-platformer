@@ -38,7 +38,7 @@ public class VerticalPlatform : MonoBehaviour
     IEnumerator flip()
     {
         contra.layer = LayerMask.NameToLayer("IgnorePlatforms");
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(0.25f);
         contra.layer = LayerMask.NameToLayer("Player");
     }
 }
