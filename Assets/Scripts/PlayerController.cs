@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
 	
 	public GameObject lifePanel;	// panel at the top showing lives
 	public GameObject lifeImagePrefab;
-	
 	public PlayerAnimation animation;
 	public ProjectileController projectileController;
 	public Text powerupText;
