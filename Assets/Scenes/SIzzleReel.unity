@@ -173,6 +173,7 @@ MonoBehaviour:
   bulletPrefab_buckshot: {fileID: 1627881808781700805, guid: a938a4474379efb45bfaa7b5d6cc3d8f, type: 3}
   bullet: {fileID: 0}
   bulletOriginT: {fileID: 1715873697}
+  proneBulletOrigin: {fileID: 721772476}
   fireCooldown: 0.3
   isAlive: 0
   takesDamage: 0
@@ -4953,6 +4954,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 160855338}
   m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &721772475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721772476}
+  m_Layer: 10
+  m_Name: ProneBulletOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721772476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721772475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4, y: -0.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6673178216341960125}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &759595214
 MonoBehaviour:
@@ -14262,7 +14293,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03527665, y: -0.07234621}
+  m_Offset: {x: -0.03527665, y: -0.098997325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14273,7 +14304,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1414294, y: 0.23478222}
+  m_Size: {x: 1.1414294, y: 0.18158}
   m_EdgeRadius: 0
 --- !u!114 &2922642880758320223
 MonoBehaviour:
@@ -14300,7 +14331,9 @@ MonoBehaviour:
   - {fileID: 3479048276803618925, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
   - {fileID: 293760190467651468, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
   - {fileID: -7213499178765892706, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
-  prone: []
+  prone:
+  - {fileID: 627292358417336679, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: 6930036616473503224, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
   dying:
   - {fileID: 127207192793799219, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
   - {fileID: 127207192793799219, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
@@ -14388,6 +14421,7 @@ Transform:
   - {fileID: 554693008}
   - {fileID: 1970538442}
   - {fileID: 1715873697}
+  - {fileID: 721772476}
   m_Father: {fileID: 0}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 	public GameObject bulletPrefab_buckshot;
 	public GameObject bullet;
 	[SerializeField] Transform bulletOriginT;
+	[SerializeField] Transform proneBulletOrigin;
 	public float fireCooldown;
 	float timeSinceLastFire;
 	
@@ -108,10 +109,16 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 			else{
-				if(isGrounded){
+				if(isGrounded)
+				{
 					animation.setAnimation(PlayerAnimation.STANDING);
+                    if (isProning)
+                    {
+						animation.setAnimation(PlayerAnimation.PRONE);
+					}
 				}
-				else{
+				else
+				{
 					animation.setAnimation(PlayerAnimation.JUMPING);
 				}
 			}
@@ -215,7 +222,15 @@ public class PlayerController : MonoBehaviour
 		Vector2 bulletVelocity = (new Vector2(velX, velY).normalized)*8f;
 		
 		GameObject blt = Instantiate(bullet);
-		blt.transform.position = bulletOriginT.position;
+        if (isProning && rb.velocity == new Vector2(0,0))
+        {
+			blt.transform.position = proneBulletOrigin.position;
+		}
+        else
+        {
+			blt.transform.position = bulletOriginT.position;
+		}
+		
 		blt.GetComponent<Rigidbody2D>().velocity = bulletVelocity;
 		
 		projectileController.addProjectile(bullet);
