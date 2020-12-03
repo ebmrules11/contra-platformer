@@ -28,12 +28,17 @@ public class BossMovement : MonoBehaviour
     public AudioSource game_audio;
     public AudioSource boss_dead_audio;
     public AudioSource boss_after_dead_audio;
+    public AudioSource boss_hit_audio;
+
     private bool audioChanged = false;
 
     public float health = 150f;
     public PlayerAnimation animation;
 
     public bool isAlive;
+    public bool hashit = false;
+    public bool hashit1 = false;
+    public bool hashit2 = false;
 	public BoxCollider2D collider;
 	public BoxCollider2D colliderOnDeath;
    
@@ -61,16 +66,22 @@ public class BossMovement : MonoBehaviour
 
         float distanceFromPlayer = Vector2.Distance(transform.position, playerOBJ.transform.position);
 
+
        if(distanceFromPlayer < sensingDistance){
-			if(health < 150 && hashit == false)
-				fireCooldown - 0.2;
+           
+        if(health < 40 && hashit == false){
+				fireCooldown -= 0.2f;
 				hashit = true;
-			if(health < 100 && hashit1 == false)
-				fireCooldown - 0.2;
+        }
+		if(health < 30 && hashit1 == false){
+				fireCooldown -= 0.2f;
 				hashit1 = true;
-			if(health < 100 && hashit2 == false)
-				fireCooldown - 0.2;
-				hashit2 == true;
+            }
+		if(health < 0 && hashit2 == false){
+				fireCooldown -= 0.2f;
+				hashit2 = true;
+            }
+			
 			if(timeSinceLastFire >= fireCooldown){
 				fire();
 				timeSinceLastFire = 0f;
@@ -89,10 +100,13 @@ public class BossMovement : MonoBehaviour
 
     private void takeHit(){
 		health--;
+
+         boss_hit_audio.Play();
 		//animation.takeHit();
 		if(health <= 0){
 			collider.enabled = false;
 			colliderOnDeath.enabled = true;
+           
 			die();
 		}
 	}

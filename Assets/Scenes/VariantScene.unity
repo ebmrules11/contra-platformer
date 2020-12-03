@@ -3159,7 +3159,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6745b2b0315dbd14ba3bdca4e5550715, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.091
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8808,7 +8808,7 @@ Transform:
   - {fileID: 2067866527}
   - {fileID: 292969803}
   - {fileID: 1670042176}
-  - {fileID: 1926458065}
+  - {fileID: 1519822051}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8832,7 +8832,7 @@ MonoBehaviour:
   bulletOriginT: {fileID: 2067866527}
   player: {fileID: 6673178215286022186}
   playerOBJ: {fileID: 1267689871146288005}
-  fireCooldown: 1
+  fireCooldown: 0.8
   rb: {fileID: 886335356}
   facingRight: 0
   firepoint: {fileID: 2067866527}
@@ -8840,10 +8840,14 @@ MonoBehaviour:
   boss_audio: {fileID: 292969802}
   game_audio: {fileID: 1461797939}
   boss_dead_audio: {fileID: 1670042175}
-  boss_after_dead_audio: {fileID: 0}
-  health: 2
+  boss_after_dead_audio: {fileID: 1926458066}
+  boss_hit_audio: {fileID: 1519822050}
+  health: 50
   animation: {fileID: 886335360}
   isAlive: 0
+  hashit: 0
+  hashit1: 0
+  hashit2: 0
   collider: {fileID: 886335358}
   colliderOnDeath: {fileID: 886335359}
 --- !u!114 &886335355
@@ -8881,7 +8885,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!82 &886335357
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9037,7 +9041,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886335350}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ac0558e228e82446bfe3b3cd3bd60fa, type: 3}
   m_Name: 
@@ -13795,6 +13799,133 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795594972301157025, guid: dfb605620e3bf9d4398d1907721d993a, type: 3}
   m_PrefabInstance: {fileID: 437477029}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1519822049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519822051}
+  - component: {fileID: 1519822050}
+  m_Layer: 9
+  m_Name: BossHitSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1519822050
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519822049}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 918f6c8cf20e96a4fbd0521b41ee78db, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1519822051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519822049}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -79.995995, y: -1.144001, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 886335353}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1520561186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2442891181738044065, guid: 11a23f5aa0c725b42a0b4b0e3c8b81b9, type: 3}
@@ -16284,12 +16415,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926458064}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6614316, y: 0.49406108, z: 0}
+  m_LocalScale: {x: 0.8744405, y: 0.8744406, z: 0.8744406}
   m_Children: []
-  m_Father: {fileID: 886335353}
-  m_RootOrder: 3
+  m_Father: {fileID: 6673178215286022186}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1926458066
 AudioSource:
@@ -16302,7 +16433,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c2f557442d6ceef41a68d9a3b7a83c75, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -18711,7 +18842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletList: []
   timeList: []
-  bulletLifetime: 0.0001
+  bulletLifetime: 0.8
 --- !u!114 &1267689871146288007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19194,6 +19325,7 @@ Transform:
   - {fileID: 856706583}
   - {fileID: 303793776}
   - {fileID: 902255016}
+  - {fileID: 1926458065}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
