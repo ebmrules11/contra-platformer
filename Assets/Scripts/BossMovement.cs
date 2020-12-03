@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -59,19 +59,25 @@ public class BossMovement : MonoBehaviour
         tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * frequency) * amplitude;
         transform.position = tempPos;
 
-        timeSinceLastFire += Time.deltaTime;
-
         float distanceFromPlayer = Vector2.Distance(transform.position, playerOBJ.transform.position);
 
        if(distanceFromPlayer < sensingDistance){
-			Vector3 dir = player.position - transform.position;
-			
+			if(health < 150 && hashit == false)
+				fireCooldown - 0.2;
+				hashit = true;
+			if(health < 100 && hashit1 == false)
+				fireCooldown - 0.2;
+				hashit1 = true;
+			if(health < 100 && hashit2 == false)
+				fireCooldown - 0.2;
+				hashit2 == true;
 			if(timeSinceLastFire >= fireCooldown){
 				fire();
 				timeSinceLastFire = 0f;
 			}
 		}
 		timeSinceLastFire += Time.deltaTime;
+		
 
     }
     void fire(){
@@ -123,7 +129,5 @@ public class BossMovement : MonoBehaviour
 		
     }
 }
-
-
 
 
