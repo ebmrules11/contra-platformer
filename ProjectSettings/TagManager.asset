@@ -8,6 +8,8 @@ TagManager:
   - Projectile
   - PlayerProjectile
   - Powerup
+  - Hazard
+  - Goal
   layers:
   - Default
   - TransparentFX

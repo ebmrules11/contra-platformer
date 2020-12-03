@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
 	public int lives;
 	public GameObject GameOverScreen;
 	
+	public GameObject WinScreen;
+	
 	public GameObject lifePanel;	// panel at the top showing lives
 	public GameObject lifeImagePrefab;
 	public PlayerAnimation animation;
@@ -57,7 +59,9 @@ public class PlayerController : MonoBehaviour
 		bullet = bulletPrefab_regular;
         rb = GetComponent<Rigidbody2D>();
 		timeSinceLastFire = 0f;
-		powerupText.text = "";
+		if(powerupText != null){
+			powerupText.text = "";
+		}
     }
 
    
@@ -320,6 +324,18 @@ public class PlayerController : MonoBehaviour
 			StartCoroutine(powerup.applyEffect(this.gameObject));
             GameObject.Destroy(obj);
         }
+	}
+	
+	void OnCollisionEnter2D(Collision2D collision){
+		GameObject obj = collision.gameObject;
+		if(obj.tag == "Hazard"){
+			if(takesDamage){
+				takeHit();
+			}
+		}
+		else if(obj.tag == "Goal"){
+			WinScreen.SetActive(true);
+		}
 	}
 
 }

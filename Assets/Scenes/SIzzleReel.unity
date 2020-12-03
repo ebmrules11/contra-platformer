@@ -169,6 +169,8 @@ MonoBehaviour:
   facingRight: 1
   isGrounded: 0
   mousePos: {x: 0, y: 0}
+  death_audio: {fileID: 0}
+  jump_audio: {fileID: 0}
   bulletPrefab_regular: {fileID: 1627881808781700805, guid: 987fd4dac76d9ad44867a2d4dfc76cff, type: 3}
   bulletPrefab_buckshot: {fileID: 1627881808781700805, guid: a938a4474379efb45bfaa7b5d6cc3d8f, type: 3}
   bullet: {fileID: 0}

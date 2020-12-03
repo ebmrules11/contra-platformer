@@ -8,6 +8,7 @@ public class BossMovement : MonoBehaviour
     public float degreesPerSecond = 15.0f;
     public float amplitude = 0.5f;
     public float frequency = 1f;
+	public float sensingDistance = 2f;
 
     public ProjectileController projectileController;
     public Transform bulletOriginT;
@@ -41,13 +42,19 @@ public class BossMovement : MonoBehaviour
 
         
 		if(timeSinceLastFire >= fireCooldown){
+			
 			fire();
 			timeSinceLastFire = 0f;
 		}
 
     }
     void fire(){
-		    Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+		
+		
+		Vector3 dir = player.position - transform.position;
+		if(dir.magnitude < sensingDistance){
+			Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+		}
 	}
     // Update is called once per frame
     void FixedUpdate()
