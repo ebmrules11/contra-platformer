@@ -247,7 +247,7 @@ public class PlayerController : MonoBehaviour
 		
 		blt.GetComponent<Rigidbody2D>().velocity = bulletVelocity;
 		
-		projectileController.addProjectile(bullet);
+		projectileController.addProjectile(blt);
 	}
 	
 	private void takeHit(){
@@ -258,7 +258,7 @@ public class PlayerController : MonoBehaviour
 			if(health <= 0){
 				collider.enabled = false;
 				colliderOnDeath.enabled = true;
-                proneCollider.enabled = false;
+                proneCollider.enabled = true;
 				lives--;
 				setLifePanel(lives);
 				if(lives > 0){

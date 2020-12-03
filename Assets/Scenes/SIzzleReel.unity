@@ -181,6 +181,7 @@ MonoBehaviour:
   takesDamage: 0
   collider: {fileID: 7104549622511125878}
   colliderOnDeath: {fileID: 1267689872103659027}
+  proneCollider: {fileID: 1267689872103659027}
   health: 1
   lives: 3
   GameOverScreen: {fileID: 434034322}
@@ -5057,7 +5058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletList: []
   timeList: []
-  bulletLifetime: 1.5
+  bulletLifetime: 1
 --- !u!1 &768832905
 GameObject:
   m_ObjectHideFlags: 0
