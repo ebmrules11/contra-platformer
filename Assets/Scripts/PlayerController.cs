@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
 	public bool takesDamage;
 	public BoxCollider2D collider;
 	public BoxCollider2D colliderOnDeath;
+    public BoxCollider2D proneCollider;
 	public int health;
 	public int lives;
 	public GameObject GameOverScreen;
@@ -150,13 +151,17 @@ public class PlayerController : MonoBehaviour
 			if(Input.GetButton("Prone"))
 			{
 				isProning = true;
-				if (Input.GetButtonDown("Jump"))
+                proneCollider.enabled = true;
+                collider.enabled = false;
+                colliderOnDeath.enabled = false;
+
+
+                if (Input.GetButtonDown("Jump"))
 				{
 					jumpDown = true;
 				}
 				jumpDown = false;
 			}
-        
 			else if (Input.GetButtonDown("Jump") && isGrounded && !isProning)
 			{
 				jump_audio.Play(0);
@@ -165,7 +170,10 @@ public class PlayerController : MonoBehaviour
 			else
 			{
 				isProning = false;
-			}
+                proneCollider.enabled = false;
+                collider.enabled = true;
+                colliderOnDeath.enabled = false;
+            }
         
 		
 			if(Input.GetMouseButton(0)){
@@ -250,6 +258,7 @@ public class PlayerController : MonoBehaviour
 			if(health <= 0){
 				collider.enabled = false;
 				colliderOnDeath.enabled = true;
+                proneCollider.enabled = false;
 				lives--;
 				setLifePanel(lives);
 				if(lives > 0){
@@ -281,6 +290,7 @@ public class PlayerController : MonoBehaviour
 		rb.AddForce(Vector2.up*jumpForce*.7f);
 		collider.enabled = true;
 		colliderOnDeath.enabled = false;
+        proneCollider.enabled = false;
 		StartCoroutine(makeInvincible(1f));  //give player 1 second of invincibility after respawning
 	}
 	IEnumerator destroyAfterDeath(){
