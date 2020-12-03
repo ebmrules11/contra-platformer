@@ -1719,10 +1719,10 @@ MonoBehaviour:
   - {fileID: -1146135198427765117, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
   - {fileID: -5813032308259775804, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
   - {fileID: -5813032308259775804, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
-  - {fileID: -2106246150354237901, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
-  - {fileID: -2106246150354237901, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
-  - {fileID: -2106246150354237901, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
-  - {fileID: -2106246150354237901, guid: 196735dc63d586442a8c1eba5342443b, type: 3}
+  - {fileID: -4985560405219597822, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
+  - {fileID: 8066307476747215125, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
+  - {fileID: 1342768245820213164, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
+  - {fileID: -6891659915724482568, guid: 55cd6467044d73b449ebd73545345d46, type: 3}
   deathComplete: 0
 --- !u!114 &745456848
 MonoBehaviour:
@@ -2217,6 +2217,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 577401955}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &856706582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 856706583}
+  m_Layer: 10
+  m_Name: Prone Bullet Origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &856706583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856706582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.096, y: -0.0643, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6673178215286022186}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &886335350
 GameObject:
@@ -4539,7 +4569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletList: []
   timeList: []
-  bulletLifetime: 0.5
+  bulletLifetime: 0.2
 --- !u!114 &1267689871146288007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4569,7 +4599,7 @@ MonoBehaviour:
   bulletPrefab_buckshot: {fileID: 1627881808781700805, guid: a938a4474379efb45bfaa7b5d6cc3d8f, type: 3}
   bullet: {fileID: 0}
   bulletOriginT: {fileID: 559313462}
-  proneBulletOrigin: {fileID: 0}
+  proneBulletOrigin: {fileID: 856706583}
   fireCooldown: 0.3
   isAlive: 0
   takesDamage: 0
@@ -4623,7 +4653,9 @@ MonoBehaviour:
   - {fileID: 1715733470666605554, guid: 1b9ed18cb0e63b04fbaf9e4c2a85946f, type: 3}
   - {fileID: -3101095728042274937, guid: 1b9ed18cb0e63b04fbaf9e4c2a85946f, type: 3}
   - {fileID: 6943618249205228964, guid: 1b9ed18cb0e63b04fbaf9e4c2a85946f, type: 3}
-  prone: []
+  prone:
+  - {fileID: -5065176491993891428, guid: 1f0a4bb9d365d124ca42cb7407b43ff5, type: 3}
+  - {fileID: -5065176491993891428, guid: 1f0a4bb9d365d124ca42cb7407b43ff5, type: 3}
   dying:
   - {fileID: -9017444308583300109, guid: 474f0c7cea52fac49afae95d864d049c, type: 3}
   - {fileID: -6063760930152125431, guid: 474f0c7cea52fac49afae95d864d049c, type: 3}
@@ -4837,6 +4869,7 @@ Transform:
   - {fileID: 845435485}
   - {fileID: 559313462}
   - {fileID: 1713349639}
+  - {fileID: 856706583}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

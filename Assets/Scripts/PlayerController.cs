@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
 	public Vector2 mousePos;
 	private bool lookingUp;
 	private bool lookingDown;
+	public AudioSource death_audio;
+	public AudioSource jump_audio;
 	
 	// shooting
 	public GameObject bulletPrefab_regular;
@@ -133,7 +135,6 @@ public class PlayerController : MonoBehaviour
 		if(isAlive){
 			
 			moveDirection = Input.GetAxis("Horizontal");
-		
 			if(Input.GetKey(KeyCode.A)){
 				moveDirection = -1f;
 			}	
@@ -154,6 +155,7 @@ public class PlayerController : MonoBehaviour
         
 			else if (Input.GetButtonDown("Jump") && isGrounded && !isProning)
 			{
+				jump_audio.Play(0);
 				isJumping = true;
 			}	
 			else
@@ -240,6 +242,7 @@ public class PlayerController : MonoBehaviour
 		if(isAlive){
 			health--;
 			animation.takeHit();
+			death_audio.Play(0);
 			if(health <= 0){
 				collider.enabled = false;
 				colliderOnDeath.enabled = true;
