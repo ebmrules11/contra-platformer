@@ -33,7 +33,7 @@ public class ProjectileController : MonoBehaviour
 				GameObject bullet = bulletList[0];
 				timeList.RemoveAt(0);
 				bulletList.RemoveAt(0);
-				GameObject.Destroy(bullet);
+				Destroy(bullet);
 			}
 		}
     }
