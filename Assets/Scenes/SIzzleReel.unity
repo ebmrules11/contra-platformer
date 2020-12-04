@@ -181,7 +181,7 @@ MonoBehaviour:
   takesDamage: 0
   collider: {fileID: 7104549622511125878}
   colliderOnDeath: {fileID: 1267689872103659027}
-  proneCollider: {fileID: 1267689872103659027}
+  proneCollider: {fileID: 1267689872103659028}
   health: 1
   lives: 3
   GameOverScreen: {fileID: 434034322}
@@ -15145,6 +15145,7 @@ GameObject:
   - component: {fileID: 9}
   - component: {fileID: 2922642880758320223}
   - component: {fileID: 759595214}
+  - component: {fileID: 1267689872103659028}
   m_Layer: 10
   m_Name: Contra
   m_TagString: Player
@@ -15177,6 +15178,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.1414294, y: 0.18158}
+  m_EdgeRadius: 0
+--- !u!61 &1267689872103659028
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267689872103659026}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.056978464, y: -0.34357113}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.76666665, y: 1.1344411}
+    newSize: {x: 0.19, y: 0.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.196981, y: 0.44729888}
   m_EdgeRadius: 0
 --- !u!114 &2922642880758320223
 MonoBehaviour:
@@ -15311,7 +15338,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.164639, y: 0.011283338}
+  m_Offset: {x: -0.164639, y: 0.00958246}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15322,5 +15349,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.41699243, y: 1.1197196}
+  m_Size: {x: 0.41699243, y: 1.1163179}
   m_EdgeRadius: 0

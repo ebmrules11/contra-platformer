@@ -46,8 +46,7 @@ public class BossMovement : MonoBehaviour
 
     void Start()
     {
-        game_audio.Pause();
-        boss_audio.Play();
+        
         
         
         isAlive = true;
@@ -68,6 +67,8 @@ public class BossMovement : MonoBehaviour
 
 
        if(distanceFromPlayer < sensingDistance){
+        game_audio.Pause();
+        boss_audio.Play();
            
         if(health < 40 && hashit == false){
 				fireCooldown -= 0.2f;
