@@ -176,7 +176,7 @@ public class PlayerController : MonoBehaviour
             }
         
 		
-			if(Input.GetMouseButton(0)){
+			if(Input.GetButton("Fire1")){
 				if(timeSinceLastFire >= fireCooldown){
 					fire();
 					timeSinceLastFire = 0f;
