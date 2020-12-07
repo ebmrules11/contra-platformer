@@ -10405,6 +10405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerup - Rapid Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 2442891181738044070, guid: 2148582664ee5a244a287fc3f9304c9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7522596857806708654, guid: 1cd68467b787cb74d83ff3028af65e89, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2148582664ee5a244a287fc3f9304c9e, type: 3}
 --- !u!1 &1366051630
