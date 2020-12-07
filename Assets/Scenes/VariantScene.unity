@@ -18870,8 +18870,8 @@ MonoBehaviour:
   mousePos: {x: 0, y: 0}
   death_audio: {fileID: 303793777}
   jump_audio: {fileID: 902255017}
-  bulletPrefab_regular: {fileID: 1627881808781700805, guid: 987fd4dac76d9ad44867a2d4dfc76cff, type: 3}
-  bulletPrefab_buckshot: {fileID: 1627881808781700805, guid: a938a4474379efb45bfaa7b5d6cc3d8f, type: 3}
+  bulletPrefab_regular: {fileID: 1627881808781700805, guid: ec2e383fb82d5de4bab61728b69f0cb0, type: 3}
+  bulletPrefab_buckshot: {fileID: 1627881808781700805, guid: abce24c874800084fbc8ac1d69d2350d, type: 3}
   bullet: {fileID: 0}
   bulletOriginT: {fileID: 559313462}
   proneBulletOrigin: {fileID: 856706583}

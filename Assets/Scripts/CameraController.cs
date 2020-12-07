@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
 		if(objectToFollow != null){
-			transform.position = Vector3.Lerp(transform.position, objectToFollow.transform.position + Vector3.back*3.75f, 20f*Time.deltaTime);
+			transform.position = Vector3.Lerp(transform.position, objectToFollow.transform.position + Vector3.back*7.75f, 20f*Time.deltaTime);
 		}
 	}
 }

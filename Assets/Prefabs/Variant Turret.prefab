@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   projectileController: {fileID: 604317904554018441}
-  bulletPrefab: {fileID: 1627881808781700805, guid: f74eedb05cd459444bd50f0d57482566, type: 3}
+  bulletPrefab: {fileID: 1627881808781700805, guid: ddca38c605fa618449868bf41b04b451, type: 3}
   bulletOriginT: {fileID: 3806521192412494896}
   fireCooldown: 0.8
   turretTimeStep: 0.5

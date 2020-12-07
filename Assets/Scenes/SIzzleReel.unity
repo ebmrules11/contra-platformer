@@ -5058,7 +5058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletList: []
   timeList: []
-  bulletLifetime: 1
+  bulletLifetime: 2
 --- !u!1 &768832905
 GameObject:
   m_ObjectHideFlags: 0
@@ -10423,7 +10423,7 @@ GameObject:
   - component: {fileID: 1366051632}
   - component: {fileID: 1366051631}
   m_Layer: 8
-  m_Name: New Sprite
+  m_Name: InvisibleWall
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
