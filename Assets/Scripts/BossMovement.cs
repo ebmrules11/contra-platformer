@@ -41,6 +41,8 @@ public class BossMovement : MonoBehaviour
     public bool hashit2 = false;
 	public BoxCollider2D collider;
 	public BoxCollider2D colliderOnDeath;
+    public bool hasPlayed = false;
+    public bool startMusic;
    
 
 
@@ -67,8 +69,10 @@ public class BossMovement : MonoBehaviour
 
 
        if(distanceFromPlayer < sensingDistance){
-        game_audio.Pause();
-        boss_audio.Play();
+        
+        startMusic = true;
+
+        playMusic(startMusic);
            
         if(health < 40 && hashit == false){
 				fireCooldown -= 0.2f;
@@ -118,6 +122,17 @@ public class BossMovement : MonoBehaviour
 			GameObject.Destroy(obj);
 		}
 	}
+
+    void playMusic(bool player)
+    {
+        
+        if(player == true && hasPlayed == false)
+        {
+            game_audio.Pause();
+            boss_audio.Play();
+            hasPlayed = true;
+        }
+    }
 
     private void die(){
 		isAlive = false;
